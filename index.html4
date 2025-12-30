@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#f7f3ee] h-screen flex items-center justify-center">
+
+<!-- CHAT APP -->
+<div class="w-full max-w-6xl h-[90vh] bg-[#fffaf5] rounded-2xl shadow-lg flex overflow-hidden">
+
+  <!-- SIDEBAR -->
+  <aside class="w-1/3 border-r bg-[#f1ebe3] hidden md:block">
+    <div class="p-4 font-bold text-lg">Chats</div>
+
+    <!-- Contact -->
+    <div class="flex items-center gap-3 px-4 py-3 hover:bg-[#e6dccf] cursor-pointer">
+      <img src="https://i.pravatar.cc/40?img=1" class="rounded-full">
+      <div>
+        <p class="font-semibold">Alex</p>
+        <p class="text-sm text-gray-600 truncate">Hey! Are you free?</p>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 px-4 py-3 hover:bg-[#e6dccf] cursor-pointer">
+      <img src="https://i.pravatar.cc/40?img=2" class="rounded-full">
+      <div>
+        <p class="font-semibold">Chris</p>
+        <p class="text-sm text-gray-600 truncate">Let's build the UI</p>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 px-4 py-3 hover:bg-[#e6dccf] cursor-pointer">
+      <img src="https://i.pravatar.cc/40?img=3" class="rounded-full">
+      <div>
+        <p class="font-semibold">Taylor</p>
+        <p class="text-sm text-gray-600 truncate">Nice design 👌</p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- CHAT SECTION -->
+  <section class="flex-1 flex flex-col">
+
+    <!-- HEADER -->
+    <div class="flex items-center gap-3 px-4 py-3 border-b bg-[#f1ebe3]">
+      <img src="https://i.pravatar.cc/40?img=1" class="rounded-full">
+      <div>
+        <p class="font-semibold">Alex</p>
+        <p class="text-xs text-gray-500">Online</p>
+      </div>
+    </div>
+
+    <!-- MESSAGES -->
+    <div class="flex-1 overflow-y-auto p-4 space-y-4 bg-[#f7f3ee]">
+
+      <!-- Incoming -->
+      <div class="flex items-start gap-2">
+        <img src="https://i.pravatar.cc/32?img=1" class="rounded-full">
+        <div class="bg-white px-4 py-2 rounded-xl max-w-xs shadow">
+          Hey! Are you working on the chat UI?
+        </div>
+      </div>
+
+      <!-- Outgoing -->
+      <div class="flex justify-end">
+        <div class="bg-[#b08968] text-white px-4 py-2 rounded-xl max-w-xs shadow">
+          Yes! Using Tailwind CSS only 😄
+        </div>
+      </div>
+
+      <!-- Incoming -->
+      <div class="flex items-start gap-2">
+        <img src="https://i.pravatar.cc/32?img=1" class="rounded-full">
+        <div class="bg-white px-4 py-2 rounded-xl max-w-xs shadow">
+          Nice! Keep it minimal and clean.
+        </div>
+      </div>
+
+      <!-- Outgoing -->
+      <div class="flex justify-end">
+        <div class="bg-[#b08968] text-white px-4 py-2 rounded-xl max-w-xs shadow">
+          Sure 👍 Beige theme looks premium.
+        </div>
+      </div>
+
+    </div>
+
+    <!-- INPUT -->
+    <div class="p-4 border-t bg-[#f1ebe3] flex items-center gap-3">
+      <input
+        type="text"
+        placeholder="Type a message..."
+        class="flex-1 px-4 py-2 rounded-full outline-none border focus:ring-2 focus:ring-[#b08968]"
+      >
+      <button class="bg-[#b08968] text-white px-5 py-2 rounded-full hover:bg-[#9c6f44]">
+        Send
+      </button>
+    </div>
+
+  </section>
+
+</div>
+
+</body>
+</html>
